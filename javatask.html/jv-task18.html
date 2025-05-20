@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>DONT STOP KEEP GOING!!</h1>
+
+
+    <script>
+        // 18. Calculate the taxable income.
+        // i.e taxable_income = gross salary - (NSSF + NHDF) 
+
+        function taxable_income(gs, ns, nh) {
+            let tax_income = gs - ((ns + nh))
+            return tax_income
+        }
+        let totaltax_income = taxable_income(total_gross, NSSF, NHDF)
+        console.log(totaltax_income, "tax_income")
+
+
+    </script>
+
+</body>
+
+</html>

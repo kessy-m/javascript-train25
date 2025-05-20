@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae corrupti praesentium, sequi sint quaerat
+        obcaecati necessitatibus nulla fugiat possimus! <br>Perspiciatis placeat nostrum alias esse, impedit ut aliquid
+        consectetur! Quibusdam, aut.
+    </p>
+
+    <script>
+        const countries = ["Kenya", "Uganda", "Rwanda"]
+        console.log(countries)
+        console.log(countries[2])
+
+        // using join method--so its uses the - as the separotor
+        console.log(countries.join("- " ,));
+
+        // using flat method--gets rid of the nested list by default
+        const fruits = [["apples", "oranges"] ,["mangoes", "kiwi",] ,["pears", "bananas"]]
+        console.log(fruits.flat()); 
+
+        // using length method--it checks the length of the array
+        console.log(countries.length)
+
+        // using concat method
+        const books1 = ["maths", "English", "science"]
+        const books2 = ["Chemistry", "History", "Geograpghy"]
+        const allbooks = books1.concat(books2);
+        console.log(allbooks)
+
+        // using keys method--returns iterator of array indexes
+        // spread interator looks like this [...] which converts the iterator into an arrray of indexes
+        const pens = ["blackpen", "bluepen", "redpen", "greenpen"]
+        const allpens =[...pens.keys()]
+        console.log(allpens);
+
+
+// using toString method--converts an array into a comma-separated string
+        const numbers = [1, 2, 3, 4]
+        console.log(numbers.toString());
+
+
+        // using findindex method--finds the specific index of an element
+        // (=>)---its an arrow function syntax(a shorter way to write functions in javascript )
+        // (===)---conditions that checks if a white ball exists in the array
+        const balls = ["blue", "red", "white", "yellow"]
+        const index = balls.findIndex(balls => balls === "white");
+        console.log(index);
+
+        // using foreach method
+        // ${index}---inserts the valua of the index variable into a string
+        // ${countries1}---inserts the value of the countries1 variable into a string
+        // final output format will be "index a : country_name"
+        const countries1 = ["Kenya", "Uganda", "Rwanda"]
+        countries1.forEach((country, index) => 
+        { console.log('Index ${index}: ${country}')});
+
+        
+        
+        
+
+
+    </script>
+
+</body>
+
+</html>

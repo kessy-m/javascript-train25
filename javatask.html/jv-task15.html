@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>welcome back</h1>
+
+    <script>
+
+
+        // Write a program that takes input of someone's basic salary and benefits, 
+        // adds them to find the gross salary then uses  the gross salary to find the NHIF. 
+        // To find the Kenya NHIF Rate using THIS LINK:  
+        // Employee's Monthly Gross Salary(Kshs)	Monthly NHIF Contribution (Kshs)
+        // 5,999	150
+        // 6,000   - 7,999	                           300
+        // 8,000 -  11,999                          	400
+        // 12,000 -  14,999                           	500
+        // 15,000 - 19,999	                            600
+        // 20,000 - 24,999                              750
+        // 25,000 - 29,999                           	850
+        // 30,000 - 34,999	                            900
+        // 35,000 - 39,999	                            950
+        // 40,000 - 44,999                      	   1,000
+        // 45,000 - 49,999	                           1,100
+        // 50,000 - 59,999                      	   1,200
+        // 60,000 - 69,999	                           1,300
+        // 70,000 - 79,999	                           1,400
+        // 80,000 - 89,999	                            1,500
+        // 90,000 - 99,999                           	1,600
+        // 100,000 and above	                        1,700s
+
+        function gross_salary(basic_salary, benefits) {
+            let gross1_salary = basic_salary + benefits
+            return gross1_salary
+        }
+        let b_salary = Number(prompt('enter basic salary'))
+        let b_fits = Number(prompt('enter benefits'))
+        let total_gross = gross_salary(b_salary, b_fits)
+        console.log(total_gross, "gross")
+
+        function nhif(gros_salary) {
+            let nhif_contribution = 0
+            if (gros_salary > 0 && gros_salary <= 5999) {
+                nhif_contribution = 150
+            }
+            else if (gros_salary >= 6000 && gros_salary <= 7999) {
+                nhif_contribution = 300
+            }
+            else if (gros_salary >= 8000 && gros_salary <= 11999) {
+                nhif_contribution = 400
+            }
+            else if (gros_salary >= 12000 && gros_salary <= 14999) {
+                nhif_contribution = 500
+            }
+            else if (gros_salary >= 15000 && gros_salary <= 19000) {
+                nhif_contribution = 600
+            }
+            else if (gros_salary >= 20000 && gros_salary <= 24999) {
+                nhif_contribution = 750
+            }
+            else if (gros_salary >= 25000 && gros_salary <= 29999) {
+                nhif_contribution = 850
+            }
+            else if (gros_salary >= 30000 && gros_salary <= 34999) {
+                nhif_contribution = 900
+            }
+            else if (gros_salary >= 35000 && gros_salary <= 39999) {
+                nhif_contribution = 950
+            }
+            else if (gros_salary >= 40000 && gros_salary <= 44999) {
+                nhif_contribution = 1000
+            }
+            else if (gros_salary >= 45000 && gros_salary <= 49999) {
+                nhif_contribution = 1100
+            }
+            else if (gros_salary >= 50000 && gros_salary <= 59999) {
+                nhif_contribution = 1200
+            }
+            else if (gros_salary >= 60000 && gros_salary <= 69999) {
+                nhif_contribution = 1300
+            }
+            else if (gros_salary >= 70000 && gros_salary <= 79999) {
+                nhif_contribution = 1400
+            }
+            else if (gros_salary >= 80000 && gros_salary <= 89999) {
+                nhif_contribution = 1500
+            }
+            else if (gros_salary >= 90000 && gros_salary <= 99999) {
+                nhif_contribution = 1600
+            }
+            else if (gros_salary >= 90000 && gros_salary <= 99999) {
+                nhif_contribution = 1600
+            }
+            else {
+                nhif_contribution = 1700
+
+            }
+            return nhif_contribution
+        }
+        let total_nhif = nhif(total_gross)
+        console.log(total_nhif, 'nhif')
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>heello there</h1>
+
+
+
+    <script>
+        // /19.  # Continue with the same program and find the person's PAYEE using the taxable income above.
+        // # Find the Kenya PAYEE Tax Rate using THIS LINK
+        // # Monthly Bands of Taxable Income 
+        // # (KES)	                      Tax Rate
+        // # 0 – 24,000	                    10%
+        // # On the next 8,333	                25%
+        // # Remaining amount over 32,333	    30%
+
+        // # Personal Relief: KES 2,400.00 per month
+        // # Minimum Taxable Income: KES 24,001.00 per month
+
+        // basic_salary=int(input("enter the basic salary: "))
+        // benefits=int(input("enter the benefits: "))
+        // gross_salary=basic_salary + benefits
+        // NSSF= gross_salary*0.06
+        // NHDF=gross_salary*0.015
+        // taxable_income=gross_salary-(NSSF + NHDF) 
+        // relief=2400
+        // if(taxable_income>0) and (taxable_income<=24000):
+        //     payee=0
+        // elif(taxable_income>=24000)and (taxable_income<=32333):
+        //     payee=(24000*0.1)+ (taxable_income-24000)*0.25 -(relief)
+        // else:    
+        //     payee=(24000*0.1)+(8333*0.25)+(taxable_income-32333)*0.3 -(relief)
+        // print("ksh."f"{round(payee,2)}")
+
+
+        function calc_payee(tax) {
+            let payee = 0
+            let relief = 2400
+
+            if (tax > 0 && tax <= 24000) {
+                payee = 0
+            }
+            else if (tax >= 24000 && tax <= 32333) {
+                payee = (24000 * 0.1) + ((tax - 24000) * 0.25) - (relief)
+            }
+            else {
+                payee = (24000 * 0.1) + (8333 * 0.25) + ((tax - 32333) * 0.3) - (relief)
+            }
+            return payee
+        }
+        let total_payee = calc_payee(totaltax_income)
+        console.log(total_payee, 'total_payee')
+
+    </script>
+
+</body>
+
+</html>

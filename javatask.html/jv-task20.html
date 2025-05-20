@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>welcome back</h1>
+
+
+
+    <script>
+
+        //20. # Continue with the same program and calculate an individual’s Net Salary using:
+        // # net_salary = gross_salary - (nhif + nhdf +  nssf + payee)
+
+        // basic_salary=float(input("enter the basic salary: "))
+        // benefits=float(input("enter the benefits: "))
+        // gross_salary=basic_salary + benefits
+        // NSSF= gross_salary*0.06
+        // NHDF=gross_salary*0.015
+        // taxable_income=gross_salary-(NSSF + NHDF) 
+        // NHIF=float(input("enter nhif: "))
+        // PAYEE=float(input("enter payee: "))
+
+        // net_salary=gross_salary-(NHIF + NHDF + NSSF + PAYEE)
+        // print("ksh. "f"{round(net_salary,2)}" )
+
+
+
+        function calc_net_salary(grs, nh1, nd1, ns1, pay) {
+            let my_salary = grs - (nh1 + nd1 + ns1 + pay)
+            return my_salary
+        }
+        let net_salary = calc_net_salary(total_gross, NHDF, NSSF, total_nhif, total_payee)
+        console.log(net_salary, 'net_salary')
+
+    </script>
+
+
+</body>
+
+</html>

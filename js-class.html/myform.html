@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="" id="myform">
+        <label for="">First Name</label> <br>
+        <input type="text" placeholder="first name" name="first_name" id="first_name"> <br>
+        <label for="">phone Number</label> <br>
+        <input type="number" placeholder="phone-number" name="Number" id="phone_num"> <br>
+        <label for="">email</label><br>
+        <input type="email" name="lemail" id="lemail"> <br>
+        <label for="">Password</label> <br>
+        <input type="password" name="Pass" id="mypasword">
+        <br>
+        <label for="female">female</label>
+        <input type="radio" name="gender" id="gender1">
+        <label for="male">male</label>
+        <input type="radio" name="gender" id="gender1"> <br> <br>
+        <label for="skills">skills</label> <br>
+        <label for="">HTML</label>
+        <input type="checkbox" name="skills" id="skills">
+        <label for="">CSS</label>
+        <input type="checkbox" name="skills" id="skills">
+        <label for="">PYTHON</label>
+        <input type="checkbox" name="skills" id="skills"> <br> <br>
+        <label for="">DOB</label>
+        <input type="date" name="dob" id="mydob"> <br> <br>
+        <label for="">starting Time</label>
+        <input type="time" name="starting time" id="start-time"> <br> <br>
+        <input type="submit" value="login">
+
+    </form>
+
+
+
+    <script>
+        let form = document.getElementById('myform');
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            let first_name = document.getElementById("firstname").value;
+            let phone_num = document.getElementById("phone_num").value;
+            let lemail = document.getElementById("lemail").value;
+            let mypasword = document.getElementById("mypasword").value;
+            let gender1 = document.getElementById("gender1").value;
+            let skills = document.getElementById("skills").value;
+            let mydob = document.getElementById("mydob").value; 
+            let start_time = document.getElementById("start_time").value;
+
+            if (first_namel.length == 0 || phone_num.length == 0 || lemail.length == 0 || mypasword.length == 0 
+            || gender1.length == 0 || skills.length == 0 || mydob.length == 0 || start-time.length == 0) {
+            alert("ensure all fields are inserted");
+        }else{
+            alert(`first_name: ${first_name}, phone_num: ${phone_num}, lemail: ${lemail}, mypasword: ${mypasword}, gender1: ${gender1},
+            skills: ${skills}, mydob: ${mydob}, start_time: ${start_time}`)
+        }
+
+
+
+    });
+        console.log(form)
+
+    </script>
+</body>
+
+</html>

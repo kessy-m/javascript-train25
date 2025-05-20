@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Numquam error eius corporis sint laudantium, harum repellat nemo labore ipsum illum. Ipsa, magni odit. Aliquam
+        magni aperiam commodi accusamus veniam aliquid!</p>
+
+
+
+
+
+    <script>
+        // loops arre used to iterate(repeat) a 
+        // task ie a task you want to run  number of times
+        // But majority a loop is used to go through a list
+        // Also sending a requst to the server every e.g 5 sec can be put in a loop with
+        // some delay. So you can delay a loop to run every number of seconds until its stopped.
+
+        let days = ["mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"]
+
+        // oroginal loop - Every browser i++ or i = i +1
+        for (let i = 0; i < days.length; i++) {
+            console.log(days[1])
+        }
+        // example power to work the element position/index
+        let res = [];
+        for (let i = 0; i < days.length; i++) {
+            if (i % 2 == 0) {
+                res.push(days[i])
+            }
+            console.log(res)
+        }
+
+
+        // // for of loop. power to work with the element
+        // for (const d of days) {
+        //     console.log(d);
+        // }
+
+
+        // // For Each loop. power to work with the element
+        // days.forEach(day => {
+        //     console.log(day);
+        // });
+
+    </script>
+
+</body>
+
+</html>
