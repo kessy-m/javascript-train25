@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h3>Object class</h3>
+
+
+
+
+
+    <script>
+
+        let person = {
+            name: "Stacey",
+            age: 20,
+            heigt: "170cm",
+            job: "Software Developer",
+            isMarried: false
+            // "full address": "Nairobi"
+        }
+        console.log(person)
+        // let height = person.height
+        // console.log(height)
+        // console.log(person['age'])
+        // console.log(person['full address'])
+
+
+        // let key = "name"
+        // console.log(person.key)
+        // console.log(person[key])
+
+
+
+        // // sample
+        // let numbers = {
+        //     "first": 1,
+        //     "second": {
+        //         third: 3
+        //     }
+        // }
+        // console.log(numbers.second.third)
+
+
+
+
+        // // task -output thanks for sharing
+
+        let user = {
+            name: "Alice",
+            hobbies: ["cycling", "painting"],
+            posts: [
+                {
+                    id: 1,
+                    title: "My first post",
+                    comments: [
+                        { id: 101, text: "Great post!" },
+                        { id: 102, text: "Thanks for sharing." },
+                    ],
+                },
+                {
+                    id: 2,
+                    title: "Another day",
+                    comments: [],
+                },
+            ],
+        };
+
+
+        let key_1 = 'posts'
+        let key_2 = 'comments'
+        console.log(user[key_1][key_2])
+
+
+        // take 2
+        let person2 = {
+            name: "Mary",
+            age: 21,
+            address: 'Kimathi st, Nairobi',
+            ismarried: false,
+            job_title: "Software Developer",
+            "phone numbers": ["078967563"],
+            info: {
+                dob: 2004,
+                date: {
+                    day: 'Monday'
+
+                }
+            }
+        }
+        let age = person.age
+        console.log(age)
+
+        let address = person2["address"]
+        console.log(address)
+
+        // let date = person2.info.dob.date.day
+        // console.log(date)
+
+        let keys = Object.keys(person)
+        let values = Object.values(person)
+        let entries = Object.entries(person)
+        console.log(values)
+
+
+
+// display great post
+        let user2 = {
+            name: "Alice",
+            hobbies: ["cycling", "painting"],
+            posts: [
+                {
+                    id: 1,
+                    title: "My first post",
+                    comments: [
+                        { id: 101, text: "Great post!" },
+                        { id: 102, text: "Thanks for sharing." },
+                    ],
+                },
+
+                {
+                    id: 2,
+                    title: "Another day",
+                    comments: [],
+                },
+            ],
+        };
+
+
+let answer = user2.posts[0].comments[0].text
+console.log(answer)
+console.log(answer)
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

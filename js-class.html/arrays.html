@@ -1,76 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
-
-<p>js class</p>
 
 
-
-
-<script>
-
-    let arr= [1,2,3,5,"John",false,[5,6,7,[8,9,10,[11,'jane']]]]
-    // size of an array
-    let size = arr.length
-    console.log('size of array',size)
-
-
-    // push- adds value at the end of an araay
-    arr.push(true)
-    arr.push(100,101,'Angela')
-    console.log('pushed array',arr)
-
-
-    // unshift- add value at the start of an array
-    arr.unshift('JS', 'Python','Rust')
-    console.log('unshift array',arr)
-
-
-
-    //pop -removes the last element of an array
-    arr.pop()
-    console.log('popped array',arr) 
-
-
-    // shift-remove first element from an array
-    arr.shift()
-    console.log('shifted array',arr)
-
-
-    // reverse -reverses the order of an array 
-    arr.reverse()
-    console.log('reversed array',arr)
-
-
-    // sorts- arranges them in ascending order
-    let x=arr.sort() 
-    console.log('sorted array',x)
-
-    
-
-    // using concat-combinning two arrays
-    let arr1= [1,2,3,5,"John",false,[5,6,7,[8,9,10,[11,'jane']]]]
-    let arr2 =['mangoes','pawpaws']
-    let combined = arr1.concat(arr2)
-    console.log(combined)
-
-
-    // using
+    <p>js class</p>
 
 
 
 
+    <script>
+
+        let arr = [1, 2, 3, 5, "John", false, [5, 6, 7, [8, 9, 10, [11, 'jane']]]]
+        // size of an array
+        let size = arr.length
+        console.log('size of array', size)
 
 
-</script>
+        // push- adds value at the end of an araay
+        arr.push(true)
+        arr.push(100, 101, 'Angela')
+        console.log('pushed array', arr)
+
+
+        // unshift- add value at the start of an array
+        arr.unshift('JS', 'Python', 'Rust')
+        console.log('unshift array', arr)
+
+
+
+        //pop -removes the last element of an array
+        arr.pop()
+        console.log('popped array', arr)
+
+
+        // shift-remove first element from an array
+        arr.shift()
+        console.log('shifted array', arr)
+
+
+        // reverse -reverses the order of an array 
+        arr.reverse()
+        console.log('reversed array', arr)
+
+
+        // sorts- arranges them in ascending order
+        let x = arr.sort()
+        console.log('sorted array', x)
+
+
+
+        // using concat-combinning two arrays
+        let arr1 = [1, 2, 3, 5, "John", false, [5, 6, 7, [8, 9, 10, [11, 'jane']]]]
+        let arr2 = ['mangoes', 'pawpaws']
+        let combined = arr1.concat(arr2)
+        console.log(combined)
+
+
+        // using splice-removing elemments
+        let fruits = ['Grapes', 'mangoes', 'Apples', 'Pear']
+        fruits.splice(1, 2)
+        console.log(fruits)
+        // starting point,how many to delete
+
+
+
+        // splice -adding elements
+        let numbers = [1, 2, 3, 4, 5, 6]
+        numbers.splice(2, 0, 7, 8)
+        console.log(numbers)
+        // starting point,how many to delete, elements to be added
+
+        let name_1 = ['mark','peter','Lucy']
+        name_1.splice(1,0,'Grace')
+        console.log(name_1)
+
+
+
+        
+        // splice - replace elements
+        let names =["Jane","John","Jake"]
+        names.splice(1, 2, "Mike")
+        console.log(names)
+        // strating point, how many to delete,relace the element
+
+
+
+
+
+
+    </script>
 
 
 
 </body>
+
 </html>
