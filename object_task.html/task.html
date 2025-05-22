@@ -1,64 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
 
-<h1>new task</h1>
+<body>
+
+
+    <h1>new task</h1>
 
 
     <script>
-// Create a new file called objectTask and attempt the below questions:
-// my_object= [23, “Jane”, 560, [“Lesson”, “Maths”, {“currency” : “KES”}], 987, 76,”John”]
+        // Create a new file called objectTask and attempt the below questions:
+        // my_object= [23, “Jane”, 560, [“Lesson”, “Maths”, {“currency” : “KES”}], 987, 76,”John”]
 
-// display:
-// 1. KES
-let my_object= [23, "Jane", 560, ["Lesson", "Maths", {"currency" : "KES"}], 987, 76,"John"]
+        // display:
+        // 1. KES
+        let my_object = [23, "Jane", 560, ["Lesson", "Maths", { "currency": "KES" }], 987, 76, "John"]
 
-let new_obj = my_object[3][2].currency
-console.log(new_obj)
-
-
-
-// 2. 560
-let new_2 = my_object[2]
-console.log(new_2)
-
-
-// 3. Maths
-let new_3 = my_object[3][1]
-console.log(new_3)
+        let new_obj = my_object[3][2].currency
+        console.log(new_obj)
 
 
 
-// 4. In the object with the key currency, add another key “amount” with value 90
-
-let new1 = my_object[3][2]['amount'] = 90;
- console.log(my_object[3][2])
-
+        // 2. 560
+        let new_2 = my_object[2]
+        console.log(new_2)
 
 
-// 5. Reverse 987 to 789 without using an inbuilt -method or Assigning 789 manually.
-let new_4 = my_object[4] = 789;
-console.log(new_4)
-
-//      Hint: arrays can be reversed using reverse() functions
+        // 3. Maths
+        let new_3 = my_object[3][1]
+        console.log(new_3)
 
 
-// 6. Change the name “John” to “Jane” . 
 
-let new_5 = my_object.splice(6,1,'jane')
-console.log(my_object)
+        // 4. In the object with the key currency, add another key “amount” with value 90
 
-let new_6 = my_object[6]='Jane'
-console.log(new_6)
+        let new1 = my_object[3][2]['amount'] = 90;
+        console.log(my_object[3][2])
+
+
+
+        // 5. Reverse 987 to 789 without using an inbuilt -method or Assigning 789 manually.
+        let new_4 = my_object[4] = 789;
+        console.log(new_4)
+
+        //      Hint: arrays can be reversed using reverse() functions
+
+
+        // 6. Change the name “John” to “Jane” . 
+
+        let new_5 = my_object.splice(6, 1, 'jane')
+        console.log(my_object)
+
+        let new_6 = my_object[6] = 'Jane'
+        console.log(new_6)
+
+
+
+
+        let company = {
+            name: "TechNova Inc.",
+            founded: 2012,
+            departments: {
+                engineering: {
+                    head: {
+                        name: "Alice Johnson",
+                        position: "VP of Engineering",
+                    },
+                    teams: {
+                        frontend: {
+                            lead: "Bob Smith",
+                            members: [
+                                {
+                                    name: "Carol",
+                                    role: "Senior Developer",
+
+                                    skills: {
+                                        js: true, react: false, vue: true,
+                                        db: [
+                                            {
+                                                postgresql: false,
+                                                nosql: {
+                                                    mongodb: ["True", {
+                                                        learning: false,
+                                                    }]
+
+                                                }
+                                            }
+                                        ]
+                                    },
+                                },
+                                {
+                                    name: "David",
+                                    role: "Junior Developer",
+                                    skills: { js: 1, react: 2, vue: 3 },
+                                },
+                            ],
+                        },
+                        backend: {
+                            lead: "Eve Black",
+                            members: [
+                                {
+                                    name: "Frank",
+                                    role: "Senior Backend Dev",
+                                    languages: ["Python", "Go", "Node.js"],
+                                },
+                                {
+                                    name: "Grace",
+                                    role: "DevOps",
+                                    certifications: {
+                                        aws: true,
+                                        docker: true,
+                                        kubernetes: true,
+                                    },
+                                },
+                            ],
+                        },
+                    },
+                },
+
+            },
+
+        };
+
+        // display false in learning
+        let answer = company.departments.engineering.teams.frontend.members[0].skills.db[0].nosql.mongodb[1].learning
+        console.log(answer)
+
+
+        //display node.js
+        let ansa = company.departments.engineering.teams.backend.members[0].languages[2]
+        console.log(ansa)
+
+
+        // display true in docker 
+        let ansa_1 = company.departments.engineering.teams.backend.members[1].certifications.docker
+        console.log(ansa_1)
+
+
+        // display the keys in certifications and determine their length
+        let disply = company.departments.engineering.teams.backend.members[1].certifications
+        console.log(disply)
+
+        // to check the keys
+        let keys = Object.keys(disply)
+        console.log(keys)
+
+        let size = keys.length
+        console.log(size)
+
+
+        // display the values of skills, their length and reverse the order
+        let new_display = company.departments.engineering.teams.frontend.members[1].skills
+        console.log(new_display)
+
+       // to output the values of the skills
+        let values = Object.values(new_display)
+        console.log(values)
+
+
+       // to reverse the values
+        let change_1 = values.reverse()
+        console.log(values)
+
+
+        // to check the length
+        let new_size = values.length
+        console.log(new_size)
+
+
+
+
+
+
 
 
 
     </script>
 </body>
+
 </html>
