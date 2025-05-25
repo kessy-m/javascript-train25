@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>
+        operatorstask
+    </h2>
+
+
+
+
+
+    <script>
+        // task 4 
+        // check if the season is Autumn, winter, spriseasonng or summer. if the user input is :
+        // september, october,or november - season is Autumn
+        // December ,january or february - season is winter
+        // march , april, or may - season is spring
+        // june , July , or august - season is summer
+
+
+
+        let seasons = prompt("enter a month: ").toLowerCase()
+        if (seasons == 'september' || seasons == 'october' || seasons == 'november') {
+            console.log('the season is Autumn')
+        }
+        else if (seasons == 'december' || seasons == 'january' || seasons == 'february') {
+            console.log('the season is Winter')
+        }
+        else if (seasons == 'march' || seasons == 'april' || seasons == 'may') {
+            console.log('the season is Spring')
+        }
+        else if (seasons == 'june' || seasons == 'july' || seasons == 'august') {
+            console.log('the season is summer')
+        } else {
+            console.log('invalid seasons')
+        }
+
+
+
+        // task 2
+        // get user input using prompt('enter your age:'). if user is 18 or older ,
+        // give feedback: 'you old enough to drive' but if not 18 give another feedback stating to wait for the number of years 
+        // he needs to turn 18
+
+        let user = parseInt(prompt('enter age: '))
+
+        if (user >= 18) {
+            console.log('you old enough to drive')
+        } else {
+            console.log('wait till you 18 for you to drive')
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

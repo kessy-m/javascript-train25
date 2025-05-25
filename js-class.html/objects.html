@@ -110,7 +110,7 @@
 
 
 
-// display great post
+        // display great post
         let user2 = {
             name: "Alice",
             hobbies: ["cycling", "painting"],
@@ -133,9 +133,107 @@
         };
 
 
-let answer = user2.posts[0].comments[0].text
-console.log(answer)
-console.log(answer)
+        let answer = user2.posts[0].comments[0].text
+        console.log(answer)
+        console.log(answer)
+
+
+
+
+
+        // example nested objects
+
+        let car = {
+            make: 'Toyota',
+            yom: 2005,
+            past_owners: {
+                first: "Joyce",
+                second: "Trevor",
+                third: "Jane",
+                fourth: {
+                    owner1: 'John',
+                    owner2: "Anne",
+                }
+            }
+        }
+
+        // console.log(car.past_owners.fifth.owner1)
+        // console.log(car?.past_owners?.fifth?)
+        // console.log(car.past_owners.fifth.owner1)
+        // uncaught type error--canot read properties
+        // you got to undefinied point/wrong key and still went further to trry and access otherr nested objects
+
+        // undefined--
+        // you tried accessing a vvalue using a wrong /undefined key - you stopped there
+
+        //        OPTIONAL CHAINING---its a feature that allows you to safely access deeply nested properties of an object
+        //                            without worrying if part of the chain is null(empty) /undefined
+
+        // eg. console.log(car?.past_owners?.fifth?)
+        // this means instead of throwing an error when you try to access a null /undefined property optional chaining 
+        // returns undefined  imediately and stops at that point
+
+        // once optional chaining encounters the first instance of null/undefined it stops at that point 
+
+
+
+        // SPREAD OPERATOR---Feature that allows you to spread/expand unpack elemnts of an iterable(something that can be looped through
+        //                   eg array,object,strings
+
+
+        // copying arrays using spread operator
+        let num = [1, 2, 3, 4, 5]
+        let num_2 = [...num]
+        console.log(num_2)
+
+
+
+        //  Merging using multiple arrays
+        let num1 = [1, 2, 3, 4, 5]
+        let num2 = [6, 7, 8, 9, 10]
+        let num3 = [...num1, ...num2]
+        console.log(num3)
+
+
+
+        // coppying objects using spread operator
+        let table = {
+            height: "90cm",
+            width: "100cm"
+        }
+
+        let table2 = {
+            ...table
+        }
+        console.log(table2)
+
+
+        // mergible multiple objects
+        let fruits = {
+            samples:'mangoes',
+            quantity:"fresh"
+        }
+
+        let soccer = {
+            teams:"Chelsea",
+            players:'11'
+        }
+
+        let newTable ={
+            ...fruits,...soccer,
+            date_sold:'2025-5-25'
+        }
+        console.log(newTable)
+
+
+
+
+
+
+
+
+
+
 
 
 
