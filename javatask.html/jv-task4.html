@@ -15,14 +15,21 @@
         // valid email. 
         // Hint: Check if it contains an “@” symbol and “.” symbol.
 
-        let my_email = prompt("enter email: ");
-        if (my_email.includes("@") && my_email.includes(".")) {
-            console.log(`${my_email} is a valid email`)
-        }
-        else {
-            console.log(`${my_email} is an invalid email `)
+        function check_valid_email(email) {
+
+            if (email.includes("@") && email.includes(".")) {
+                return "valid email";
+            }
+            else {
+                return "inavalid email"
+            }
         }
 
+
+
+        let email = prompt("enter email: ");
+        let new_email =check_valid_email(email);
+        console.log(new_email)
     </script>
 
 

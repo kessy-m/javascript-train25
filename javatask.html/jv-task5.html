@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+
 <body>
 
-    <h1>Good afternoon.</h1>
+  <h1>Good afternoon.</h1>
 
 
-    <script>
-// Implement a program that takes 3 users inputs from the terminal or the Browser, 
-// and stores them in three variables. 
- // Return the largest of the three. 
+  <script>
+    // Implement a program that takes 3 users inputs from the terminal or the Browser, 
+    // and stores them in three variables. 
+    // Return the largest of the three. 
 
- let num1 = parseInt(prompt("enter first number: "));
- let num2 = parseInt(prompt("enter second number: "));
- let num3 = parseInt(prompt("enter third number: "))
+    function find_largest(num1, num2, num3) {
+      if (num1 >= num2 && num1 >= num3) {
+        return num1;
+      }
+      else if (num2 >= num1 && num2 >= num3) {
+        return num2;
+      }
+      else {
+        return num3;
+      }
 
-  if (num1 > num2 && num1 > num3 ){
-    console.log(`${num1} is the largest`)
-  }
-  else if (num2 > num1 && num2 > num3){
-    console.log(`${num2} is the largest`)
-  }
-  else{
-    console.log(`${num3} is the largest`)
-  }
+    }
 
+// take input
+    let num1 = parseInt(prompt("enter first number: "));
+    let num2 = parseInt(prompt("enter second number: "));
+    let num3 = parseInt(prompt("enter third number: "));
 
+    // create a variable to call the function
+    let largest_no = find_largest(num1,num2,num3);
+    console.log(`${largest_no} is the largest`);
 
+  </script>
 
-
-
-
-    </script>
-    
 </body>
+
 </html>

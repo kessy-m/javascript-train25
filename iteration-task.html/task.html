@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>iteration task</h1>
+
+
+
+
+
+    <script>
+        //  TASK 78 Create a file called mylooptask.html. console.log numbers that are only divisible by 5 and 7  and between 0 to 500.
+        // The output should be 35, 70, 105…..
+        let numbers = [];
+        for (let x = 0; x <= 501; x++) {
+            if (x % 5 == 0 && x % 7 == 0) {
+                numbers.push(x)
+            }
+        }
+        console.log(numbers)
+
+
+
+        // Hint: Use For loop and IF statements
+        // 1. Display numbers from 20 to 80 in console log
+        for (let i = 20; i <= 81; i++) {
+            console.log(i)
+        }
+
+
+
+        // 2. Improve num 1 above, only display numbers divisible by 7
+        // i.e 21, 28, 35...
+        for (let i = 20; i <= 81; i++) {
+            if (i % 7 == 0) {
+                console.log(i)
+            }
+        }
+
+
+
+
+        // 3. Store the numbers divisible by 7, in an array
+        let num1 = [];
+        for (let i = 20; i <= 81; i++) {
+            if (i % 7 == 0) {
+                num1.push(i)
+                console.log(num1)
+            }
+        }
+
+
+
+        // 4. Display that array with all the values.
+        let mynum = [];
+        for (let i = 20; i <= 81; i++) {
+            if (i % 7 == 0) {
+                mynum.push(i)
+            }
+        }
+        console.log('total numbers divisble by 7 are:', mynum)
+
+
+        // NB: having the console.log  after the loop=>to give clean final result 
+        //            console.log  before the loop=> step by step updates
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

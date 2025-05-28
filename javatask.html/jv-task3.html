@@ -18,30 +18,38 @@
         // e.g if a user enters “0112345678”, the program should display “+254112345678”
         // e.g if a user enters “712345678”, the program should display “+254712345678”
 
-        let phone_num = prompt("enter the phone number: ")
+        function check_phonenumber(phone_num) {
+            let valid_phonenumber;
 
-        if (phone_num.startsWith("+254") && phone_num.length == 13) {
-            console.log(`${phone_num} is a valid number.`)
+            if (phone_num.startsWith("+254") && phone_num.length == 13) {
+                return 'valid number';
+            }
+            else if (phone_num.startsWith("07") && phone_num.length == 10) {
+                valid_number = "+254" + phone_num.slice(1)
+                return 'valid number';
+            }
+            else if (phone_num.startsWith("7") && phone_num.length == 9) {
+                valid_number = "+254" + phone_num
+                return 'valid number';
+            }
+            else if (phone_num.startsWith("254") && phone_num.length == 12) {
+                valid_number = "+254" + phone_num('+')
+                return 'valid number';
+            }
+            else if (phone_num.startsWith("01") && phone_num.length == 10) {
+                valid_number = "+254" + phone_num.slice(1)
+                return 'valid number'
+            }
+            else {
+                return 'phone number is invalid'
+            }
+
         }
-        else if (phone_num.startsWith("07") && phone_num.length == 10) {
-            valid_number = "+254" + phone_num.slice(1)
-            console.log(`${valid_number} is a valid number.`)
-        }
-        else if (phone_num.startsWith("7") && phone_num.length == 9) {
-            valid_number = "+254" + phone_num
-            console.log(`${valid_number} is a valid number.`)
-        }
-        else if (phone_num.startsWith("254") && phone_num.length == 12) {
-            valid_number = "+254" + phone_num('+')
-            console.log(`${valid_number} is a valid number.`)
-        }
-        else if (phone_num.startsWith("01") && phone_num.length == 10) {
-            valid_number = "+254" + phone_num.slice(1)
-            console.log(`${valid_number} is a valid number.`)
-        }
-        else {
-            console.log(`${phone_num} is an invalid number.`)
-        }
+
+
+        let phone_num = Number(prompt("enter the phone number: "));
+        let valid_phonenumber =check_phonenumber(phone_num);
+        console.log(valid_phonenumber)
 
     </script>
 

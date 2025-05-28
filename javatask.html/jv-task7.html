@@ -15,23 +15,31 @@
         // Then output the correct grade: 
         // A > 79 , B - 60 to 79, C  > 49 to 59, D - 40 to 49, E - less 40
 
-        let marks = prompt("enter the marks: ")
-        if (marks > 0 && marks > 100) {
-            if (marks > 0 && marks < 79) {
-                console.log("grade is A")
-            } else if (marks > 60 && marks < 79) {
-                console.log("grade is B-")
-            } else if (marks > 49 && marks < 59) {
-                console.log("grade is C")
-            } else if (marks > 40 && marks < 49) {
-                console.log("grade is D-")
+        function group_grades(marks) {
+
+            if (marks > 0 && marks > 100) {
+                if (marks > 0 && marks < 79) {
+                    return 'grade is A';
+                } else if (marks > 60 && marks < 79) {
+                    return 'grade is B';
+                } else if (marks > 49 && marks < 59) {
+                    return 'grade is C;'
+                } else if (marks > 40 && marks < 49) {
+                    return 'grade is D;'
+                } else {
+                    return 'grade is E'
+                }
             } else {
-                console.log("grade is E")
+                return 'correct grade';
             }
-        } else {
-            console.log("correct grade")
+
         }
 
+        // take input
+
+        let marks = Number(prompt("enter the marks: "));
+        let new_grades = group_grades(marks);
+        console.log(new_grades)
 
 
 

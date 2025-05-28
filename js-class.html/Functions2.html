@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>functions</div>
+
+    <script>
+
+        // parametized functions--using parameters
+        function display_value(value) {
+            console.log(value)
+        }
+        let numbers = [1, 2, 3, 4, 5]
+        display_value(numbers)
+
+
+
+        // trial task
+
+        //q1 function that can take any number and output its cube
+        function cube(number) {
+            let cube_no = number ** 3
+            return cube_no
+
+        }
+        let num1 = parseInt(prompt('enter num1:'))
+        let cube_no = cube(num1)
+        console.log(cube_no)
+
+
+
+        // q2 write a  javascript function to reverse a number
+        function reverse_number(number) {
+            let str_no = String(number).split('').reverse().join('')
+            let reversed_no = parseInt(str_no)
+            return reversed_no
+        }
+        let number = parseInt(prompt('enter the number: '))
+        let reversed_no = reverse_number(number)
+        console.log(reversed_no)
+
+
+
+        //q3 write a js function that can arrange a random string in alphabetical order
+        function sort_strings(str) {
+            let mystr = str.split('').sort().join('');
+            return mystr;
+        }
+        let str = String(prompt('enter a word:'));
+        let sorted_strings = sort_strings(str);
+        console.log(sorted_strings)
+
+
+
+
+
+        //q4 write a js function that accepts a string as a parameter and converts the first letter of 
+        // each word of the string in uppercase
+
+
+
+
+
+        //q5 write a js function to calculate multiplication and division of two numbers
+        function mycalculator(a, b) {
+            let multiply = a * b;
+            let divide = a / b;
+            let myanswers = [multiply, divide];
+            return myanswers;
+        }
+        let val1 = parseInt(prompt('enter first value: '))
+        let val2 = parseInt(prompt('enter second value: '))
+        let myanswers = mycalculator(val1, val2)
+
+        console.log('multiplication', myanswers[0]);
+        console.log('division', myanswers[1]);
+
+
+
+        //q6 write a js function program that accepts the intergers and display the larger
+
+        function largest_num(a, b) {
+            let large_num = a > b;
+            return large_num;
+        }
+        let val3 = parseInt(prompt('enter value 3:'))
+        let val4 = parseInt(prompt('enter value 4: '))
+        let large_num = largest_num(val3, val4)
+
+        console.log(large_num)
+
+
+        //q7 write a javascript function to clone an array
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
