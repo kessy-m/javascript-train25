@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h2>Good afternoon everyone</h2>
 
@@ -18,31 +20,33 @@
 
 
 
-        const myemail = "admin@gmail.com";
-        const mypassword = "Admin@123";
-        const total_attempts = 3; 
-    
-        for (let attempt = 0; attempt < total_attempts; attempt++){
-            let email = prompt("enter your email: ")
-            let passworrd = prompt("enter your password: ")
-            
-            if (email == myemail && passworrd == mypassword){
-                console.log("login is succesfull")
-                beak;
+        function check_logins(email, password) {
+            const myemail = "admin@gmail.com";
+            const mypassword = "Admin@123";
+            const total_attempts = 3;
+
+            for (let attempt = 0; attempt < total_attempts; attempt++) {
+                if (email == myemail && password == mypassword) {
+                    console.log("login is succesfull")
+                    beak;
+                }
+                else {
+                    remaining_attempts = total_attempts - attempt
+                    if (remaining_attempts < total_attempts) {
+                        console.log(`try again you have : ${remaining_attempts} left`)
+                    }
+                    else {
+                        console.log('blocked')
+                    }
+                } 
             }
-            else{
-                remaining_attempts=total_attempts
-            }
-
-
-
-
-
-
-
-
 
         }
+        let email = prompt("enter your email: ")
+        let password = prompt("enter your password: ")
+
+        check_logins(email,password)
+
 
 
 
@@ -54,7 +58,7 @@
 
 
     </script>
-    
+
 
 
 
@@ -65,4 +69,5 @@
 
 
 </body>
+
 </html>

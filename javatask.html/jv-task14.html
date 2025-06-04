@@ -1,28 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>helo there</h1>
-    
+
 
 
 
 
     <script>
-// Write a program that takes input of 2 values and adds them. 
-// The program should only accept numbers and floats only or otherwise display an error “invalid character entered” 
-// and take the user to re-enter the inputs .
+        // Write a program that takes input of 2 values and adds them. 
+        // The program should only accept numbers and floats only or otherwise display an error 
+        // “invalid character entered” 
+        // and take the user to re-enter the inputs .
 
-let num1 = parseInt(prompt("enter the first number: "))
-let num2 = parseInt(prompt("enter second number: "))
- if (num1)
+
+        function add_values(num1, num2) {
+            if (isNaN(num1) || isNaN(num2) ) {
+                return 'invalid inputs'
+            }
+            else {
+                return Number(num1) + Number(num2)
+            }
+        }
+        
+        // take input
+        let num1 = Number(prompt("enter the first number: "));
+        let num2 = parseFloat(prompt("enter second number: "));
+
+        let new_values = add_values(num1, num2);
+        console.log(new_values)
 
 
 
     </script>
 </body>
+
 </html>

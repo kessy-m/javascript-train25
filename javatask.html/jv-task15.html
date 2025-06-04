@@ -43,9 +43,13 @@
         let b_salary = Number(prompt('enter basic salary'))
         let b_fits = Number(prompt('enter benefits'))
         let total_gross = gross_salary(b_salary, b_fits)
+        
         console.log(total_gross, "gross")
 
+
+
         function nhif(gros_salary) {
+
             let nhif_contribution = 0
             if (gros_salary > 0 && gros_salary <= 5999) {
                 nhif_contribution = 150
@@ -104,7 +108,10 @@
             }
             return nhif_contribution
         }
-        let total_nhif = nhif(total_gross)
+
+        let gros_salary=Number(prompt('enter the gross salary: '))
+
+        let total_nhif = nhif(gros_salary)
         console.log(total_nhif, 'nhif')
 
     </script>

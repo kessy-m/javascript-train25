@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1 id="num1">3</h1>
+        <h2 id="num2">4</h2>
+        <h3 id="num3"></h3>
+    </div>
+
+
+    <script>
+        // for you to access the value inside the <h1> element use the methd (.getelementbyId)
+        //  that is accesing the id inside the <h1> element
+        // and to now acces the <h1> element value we now use the method <.innerHTML>
+
+
+        let num1 = Number(document.getElementById("num1").innerHTML)
+        let num2 = Number(document.getElementById("num2").innerHTML)
+        let num3 = num1 + num2
+        document.getElementById('num3').innerHTML = num3
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

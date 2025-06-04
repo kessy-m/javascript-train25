@@ -20,7 +20,11 @@
             let calc_nhdf = gs * rate
             return calc_nhdf
         }
-        let NHDF = nhdf(total_gross)
+
+        let gs_gross = Number(prompt('enter the gross salary: '));
+        let rate_2 = 0.015;
+
+        let NHDF = nhdf(gs_gross, rate_2)
         console.log(NHDF, 'nhdf')
 
     </script>

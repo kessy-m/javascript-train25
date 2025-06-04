@@ -31,11 +31,19 @@
 
 
 
-        function calc_net_salary(grs, nh1, nd1, ns1, pay) {
-            let my_salary = grs - (nh1 + nd1 + ns1 + pay)
+        function calc_net_salary(grss, nhf, ndf, nsf, paye) {
+            let my_salary = grss - (nhf + ndf + nsf + paye)
             return my_salary
         }
-        let net_salary = calc_net_salary(total_gross, NHDF, NSSF, total_nhif, total_payee)
+
+        let grss = Number(prompt('enter gross salary: '));
+        let nhf = Number(prompt(' enter nhif: '));
+        let ndf = Number(prompt('enter ndf: '));
+        let nsf = Number(prompt('enter nssf: '));
+        let paye = Number(prompt('enter payee: '));
+
+
+        let net_salary = calc_net_salary(grss, nhf, ndf, nsf, paye);
         console.log(net_salary, 'net_salary')
 
     </script>

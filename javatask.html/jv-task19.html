@@ -41,7 +41,7 @@
         // print("ksh."f"{round(payee,2)}")
 
 
-        function calc_payee(tax) {
+         function calc_payee(tax) {
             let payee = 0
             let relief = 2400
 
@@ -56,7 +56,10 @@
             }
             return payee
         }
-        let total_payee = calc_payee(totaltax_income)
+
+        let tax = Number(prompt('enter the tax: '))
+
+        let total_payee = calc_payee(tax)
         console.log(total_payee, 'total_payee')
 
     </script>

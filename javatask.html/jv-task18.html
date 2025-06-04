@@ -15,11 +15,16 @@
         // 18. Calculate the taxable income.
         // i.e taxable_income = gross salary - (NSSF + NHDF) 
 
-        function taxable_income(gs, ns, nh) {
+         function taxable_income(gs, ns, nh) {
             let tax_income = gs - ((ns + nh))
             return tax_income
         }
-        let totaltax_income = taxable_income(total_gross, NSSF, NHDF)
+
+        let gs1_gross = Number(prompt('enter the gross salary: '))
+        let ns = Number(prompt('enter nssf: '))
+        let nh = Number(prompt('enter nhif: '))
+
+        let totaltax_income = taxable_income(gs1_gross, ns, nh)
         console.log(totaltax_income, "tax_income")
 
 
